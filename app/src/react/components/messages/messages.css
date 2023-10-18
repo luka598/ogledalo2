@@ -1,0 +1,36 @@
+.message-transition-enter {
+  @apply opacity-0;
+  @apply scale-0;
+  @apply blur-md;
+  @apply transition-all;
+  @apply duration-1000;
+}
+
+.message-transition-enter-active {
+  @apply opacity-100;
+  @apply scale-100;
+  @apply blur-none;
+  @apply transition-all;
+  @apply duration-1000;
+}
+
+.message-transition-exit {
+  @apply opacity-100;
+  @apply scale-100;
+  @apply blur-none;
+  @apply translate-y-0;
+  @apply absolute;
+  @apply transition-all;
+  @apply duration-1000;
+}
+
+.message-transition-exit-active {
+  @apply opacity-0;
+  @apply scale-0;
+  @apply blur-md;
+  @apply translate-y-full;
+  @apply absolute;
+  @apply transition-all;
+  @apply duration-1000;
+}
+
